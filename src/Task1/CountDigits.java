@@ -1,3 +1,5 @@
+package Task1;
+
 public class CountDigits{
     public static int countLessThanFive(int num){
         int count = 0;
