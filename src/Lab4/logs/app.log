@@ -1,0 +1,48 @@
+2026-10-08 08:53:50 ERROR [main] org.example.TariffFactory - Invalid fee for tariff Error Plan. Using default fee: 0.0
+2026-10-08 08:53:50 WARN  [main] org.example.TariffFactory - Invalid data format, skipping line: PREPAID, Short Plan, 10.0
+2026-10-08 08:58:58 FATAL [main] org.example.DataReader - Failed to read file: Z:/invalid_path/file.txt
+java.nio.file.NoSuchFileException: Z:\invalid_path\file.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:104)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:109)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:231)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:357)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:399)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:371)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:154)
+	at java.base/java.nio.file.Files.newBufferedReader(Files.java:2649)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3089)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3126)
+	at org.example.DataReader.readLines(DataReader.java:19)
+	at org.example.DataReaderTest.testReadDataFromInvalidPathReturnsEmptyList(DataReaderTest.java:36)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:67)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+2026-10-08 08:58:58 INFO  [main] org.example.DataReader - Successfully read 2 lines from C:\Users\user\AppData\Local\Temp\test_tariffs7673407834473756397.txt
+2026-10-08 09:07:21 INFO  [main] org.example.MobileNetwork - Calculating total number of clients.
+2026-10-08 09:07:21 INFO  [main] org.example.MobileNetwork - Calculating total number of clients.
+2026-10-08 09:07:21 INFO  [main] org.example.MobileNetwork - Searching for tariffs with subscription fee between 12.0 and 60.0
+2026-10-08 09:07:21 INFO  [main] org.example.MobileNetwork - Searching for tariffs with subscription fee between 100.0 and 200.0
+2026-10-08 09:07:21 INFO  [main] org.example.MobileNetwork - Sorting tariffs by subscription fee.
