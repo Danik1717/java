@@ -1,5 +1,0 @@
-PREPAID, Basic Plan, 10.50, 1500, 100
-CORPORATE, Business Pro, 25.00, 500, 0.15
-PREPAID, ErrorTariff, invalid_fee, 200, 50
-CORPORATE, Enterprise, 50.00, bad_client_count, 0.20
-PREPAID, Student Plan, 5.00, 3000, 500
