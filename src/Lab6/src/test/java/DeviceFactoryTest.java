@@ -1,0 +1,2 @@
+public class ConfigureDeviceTest {
+}
